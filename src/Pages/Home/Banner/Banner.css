@@ -1,0 +1,45 @@
+
+.banner-overlay{
+  position: relative;
+}
+.banner-overlay::before{
+    background-color: #0D023C;
+    content: "";
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+}
+
+.carousel-caption h3{
+  font-size: 50px;
+}
+.carousel-caption p{
+  font-size: 30px;
+}
+
+/*responsive */
+@media only screen and (max-width:688px) {
+  .carousel-caption h3{
+    font-size: 20px;
+  }
+  .carousel-caption p{
+    font-size: 15px;
+  }
+  .service-container{
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (min-width:689px) and (max-width: 991px){
+  .carousel-caption h3{
+    font-size: 30px;
+  }
+  .carousel-caption p{
+    font-size: 20px;
+  }
+  .service-container{
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
