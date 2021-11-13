@@ -9,7 +9,7 @@ const ManageProducts = () => {
   const handleDeleteOrder = id => {
     const proceed = window.confirm('Are you sure, you want to delete?');
     if (proceed) {
-      axios.delete(`http://localhost:5000/products/${id}`)
+      axios.delete(`https://whispering-anchorage-35214.herokuapp.com/products/${id}`)
         .then(res => {
           if (res.data.deletedCount > 0) {
             alert('deleted successfully');

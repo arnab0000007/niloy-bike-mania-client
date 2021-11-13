@@ -10,7 +10,7 @@ const AddService = () => {
   const { register, handleSubmit, formState: { errors },reset } = useForm();
   const {special,setSpecial} = useProducts();
   const onSubmit = data => {
-    axios.post('http://localhost:5000/products', data)
+    axios.post('https://whispering-anchorage-35214.herokuapp.com/products', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added successfully');

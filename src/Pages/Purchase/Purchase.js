@@ -11,7 +11,7 @@ const Purchase = () => {
   const [service, setService] = useState({});
   const { productId } = useParams();
   useEffect(() => {
-    axios.get(`http://localhost:5000/products/${productId}`)
+    axios.get(`https://whispering-anchorage-35214.herokuapp.com/products/${productId}`)
       .then(res => {
         setService(res.data)
       })
@@ -22,7 +22,7 @@ const Purchase = () => {
     data.userId = user.uid;
     data.orderStatus = "pending";
     console.log(data);
-    axios.post('http://localhost:5000/orders', data)
+    axios.post('https://whispering-anchorage-35214.herokuapp.com/orders', data)
       .then(res => {
         if (res.data.insertedId) {
           alert('Booked successfully');

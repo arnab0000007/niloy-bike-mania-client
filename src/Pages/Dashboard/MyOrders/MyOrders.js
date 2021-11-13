@@ -10,7 +10,7 @@ const MyOrders = () => {
   const handleDeleteOrder = id => {
     const proceed = window.confirm('Are you sure, you want to delete?');
     if (proceed) {
-       axios.delete(`http://localhost:5000/orders/${id}`)
+       axios.delete(`https://whispering-anchorage-35214.herokuapp.com/orders/${id}`)
             .then(res => {
                 if (res.data.deletedCount > 0) {
                     alert('deleted successfully');
@@ -22,7 +22,7 @@ const MyOrders = () => {
 }
   useEffect(() => {
     
-    axios.get(`http://localhost:5000/myOrders/${user.uid}`)
+    axios.get(`https://whispering-anchorage-35214.herokuapp.com/myOrders/${user.uid}`)
       .then(res => {
         setOrders(res.data)
       })

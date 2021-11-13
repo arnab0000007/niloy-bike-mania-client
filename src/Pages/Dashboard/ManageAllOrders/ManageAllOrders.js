@@ -8,7 +8,7 @@ const [special,setSpecial] = useState(true);
 const handleDeleteOrder = id => {
   const proceed = window.confirm('Are you sure, you want to delete?');
   if (proceed) {
-     axios.delete(`http://localhost:5000/orders/${id}`)
+     axios.delete(`https://whispering-anchorage-35214.herokuapp.com/orders/${id}`)
           .then(res => {
             if (res.data.deletedCount > 0) {
               alert('deleted successfully');
@@ -23,7 +23,7 @@ const handleDeleteOrder = id => {
 const handleUpdateOrder = id => {
   const proceed = window.confirm('Are you sure, you want to Ship?');
   if (proceed) {
-     axios.put(`http://localhost:5000/orders/${id}`)  
+     axios.put(`https://whispering-anchorage-35214.herokuapp.com/orders/${id}`)  
           .then(res => {
               if (res.data.modifiedCount > 0) {
                   alert('Approved successfully');
@@ -33,7 +33,7 @@ const handleUpdateOrder = id => {
   }
 }
   useEffect(() => {
-    axios.get('http://localhost:5000/orders/')
+    axios.get('https://whispering-anchorage-35214.herokuapp.com/orders/')
       .then(res => {
         setAllOrder(res.data)
       })

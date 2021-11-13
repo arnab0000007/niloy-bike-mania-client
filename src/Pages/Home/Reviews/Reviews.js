@@ -7,7 +7,7 @@ import './Reviews.css';
 const Products = () => {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-      axios.get('http://localhost:5000/reviews')
+      axios.get('https://whispering-anchorage-35214.herokuapp.com/reviews')
       .then(res => {
           setReviews(res.data);
        })

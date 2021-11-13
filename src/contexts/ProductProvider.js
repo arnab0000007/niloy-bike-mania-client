@@ -7,7 +7,7 @@ const ProductProvider = ({ children }) => {
     const [special, setSpecial] = useState(true);
     useEffect(() => {
      
-        axios.get('http://localhost:5000/products')
+        axios.get('https://whispering-anchorage-35214.herokuapp.com/products')
         .then(res => {
             setProducts(res.data)
          })

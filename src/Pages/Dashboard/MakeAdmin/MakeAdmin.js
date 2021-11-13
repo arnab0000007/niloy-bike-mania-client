@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 const Login = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
   const onSubmit = (email) => {
-    axios.put('http://localhost:5000/users/admin', email)
+    axios.put('https://whispering-anchorage-35214.herokuapp.com/admin', email)
       .then(res => {
         if (res.data.insertedId || res.data.modifiedCount) {
           alert('Admin Set Successfull');
