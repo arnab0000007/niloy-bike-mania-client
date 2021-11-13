@@ -32,15 +32,15 @@ const Register = () => {
         <div className="col-lg-4 col-md-6 col-sm-8 col-12 m-auto mb-5 ">
           <h3 className="pb-3 mt-5">Please Register Here</h3>
 
-          <div className="login-main d-flex flex-column align-items-center bg-light py-5">
+          <div className="login-main d-flex flex-column bg-light p-5">
             <form className="" onSubmit={handleSubmit(onSubmit)}>
-              <input placeholder="Input your name" className="d-block mb-3  px-5" {...register("name", { required: true })} />
+              <input placeholder="Input your name" className="d-block mb-3  w-100" {...register("name", { required: true })} />
               {errors.name && <span className="error text-danger">Name is required</span>}
-              <input placeholder="Input your email" className="d-block mb-3  px-5" {...register("email", { required: true })} />
+              <input placeholder="Input your email" className="d-block mb-3 w-100" {...register("email", { required: true })} />
 
               {errors.email && <span className="error text-danger">Email is required</span>}
 
-              <input placeholder="Input your Password" className="d-block mb-3 px-5" type="password" {...register("password", { required: true })} />
+              <input placeholder="Input your Password" className="d-block mb-3 w-100" type="password" {...register("password", { required: true })} />
               {errors.password && <span className="error text-danger d-block">Password is required</span>}
               <input type="submit" className="d-inline btn btn-warning" />
             </form>
