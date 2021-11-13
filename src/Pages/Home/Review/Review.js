@@ -10,7 +10,7 @@ const Review = ({ reviewN }) => {
             <Card className="bg-light shadow-lg pb-3 mb-5 bg-body rounded">
             <Rating rating={rating}></Rating>
             <h3 className="pt-3 fw-bolder">{name}</h3>
-            <p className="px-3">{ review.slice(0,200)}</p>
+            <p className="px-3">{ review.slice(0,200)}...</p>
             <small>{email}</small>
             </Card>
         </div>

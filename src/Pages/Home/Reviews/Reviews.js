@@ -12,7 +12,7 @@ const Products = () => {
           setReviews(res.data);
        })
 
-  }, [reviews]);
+  }, []);
     if (reviews?.length < 1 ) {
         return <div className="spinner"><Spinner animation="border" variant="danger"/></div>
     }
