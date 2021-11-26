@@ -1,10 +1,11 @@
 # Niloy Bike Mania - Bike selling website
-* live link : https://niloy-bike-mania.web.app/
+* live website link : https://niloy-bike-mania.web.app/
+---------------------------------------------------------------------------------
 ### Poject Description
-* Bike selling website where user can explore and buy different kind of bikes.
+* Bike selling website where users can explore and buy different kinds of bikes
 * To place a purchase order user must have to create an account or login in the website.
-*	Logged in user can place order, remove order, see all orders and add review.
-*	Admin can add products, remove products, approve orders and make new admin.  
+*	Logged in users can place orders, remove orders, see all orders and add a review.
+*	Admin can add products, remove products, approve orders and make a new admin.  
 
 ----------------------------------------------------------------------------------
 
