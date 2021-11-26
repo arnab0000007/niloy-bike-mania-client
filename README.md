@@ -1,4 +1,4 @@
-# Niloy Bike Mania Client
+# Niloy Bike Mania - Bike selling website
 * live link : https://niloy-bike-mania.web.app/
 ### Poject Description
 * Bike selling website where user can explore and buy different kind of bikes.
@@ -6,12 +6,13 @@
 *	Logged in user can place order, remove order, see all orders and add review.
 *	Admin can add products, remove products, approve orders and make new admin.  
 
+----------------------------------------------------------------------------------
 
-** fetched products from mongodb Server
-** login and register with firebase 
-** login with google
-** react hook form, context api 
-** CRUD Operations
-** Different Dashboard For Admin and Normal User
-** context hook and useState used for data management.
-** Private route is also implemented.
+* fetched products from mongodb Server
+* login and register with firebase 
+* login with google
+* react hook form, context api 
+* CRUD Operations
+* Different Dashboard For Admin and Normal User
+* context hook and useState used for data management.
+* Private route is also implemented.
